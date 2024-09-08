@@ -1,0 +1,138 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #000;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 30px;
+}
+
+.navigation{
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+}
+
+.btn {
+  background-color: grey;
+  border: 1px solid #000;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 7px;
+}
+
+.btn-new {
+  border-radius: 50%;
+  padding: 0px 15px;
+  font-size: 3rem;
+  background-color: darkseagreen;
+}
+
+.container > h1, .search-container{
+  text-align: center;
+}
+
+.search-container > input {
+  width: 100%;
+}
+
+.category-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.category {
+  padding: 2px 13px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.category.active, .category.active:hover {
+  background-color: green;
+  border: 1px solid greenyellow;
+  color: #fff;
+}
+
+.category:hover {
+  background-color: greenyellow;
+}
+
+.note-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.note{
+  width: auto;
+  height: 100px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.note-header, .note-body{
+  padding: 0 5px;
+}
+
+.note-header{
+  
+}
+
+.note-body{
+  
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#btnBack {
+  cursor: pointer;
+  margin-right: auto;
+  background-color: #fff;
+  border: 0;
+  font-size: 2rem;
+}
+
+.title-note {
+  font-size: 2rem;
+  border: 0;
+  outline: none;
+  text-align: center;
+
+  position: relative;
+  left: -35%;
+}
+
+.ql-container.ql-snow {
+  border: 0 !important;
+}
+.ql-toolbar.ql-snow {
+  border: 0 !important;
+  display: flex;
+  justify-content: center;
+}
