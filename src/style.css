@@ -24,8 +24,8 @@
 
 .navigation{
   position: fixed;
-  bottom: 0;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .btn {
@@ -110,12 +110,17 @@ nav{
   position: relative;
 }
 
-#btnBack {
+#btnBack, #btnSave {
   cursor: pointer;
   margin-right: auto;
   background-color: #fff;
   border: 0;
   font-size: 2rem;
+}
+
+#btnSave {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .title-note {
@@ -124,8 +129,8 @@ nav{
   outline: none;
   text-align: center;
 
-  position: relative;
-  left: -35%;
+  /* position: relative;
+  left: -35%; */
 }
 
 .ql-container.ql-snow {

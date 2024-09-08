@@ -15,10 +15,10 @@ mainPage = document.querySelector('.main-page'),
 otherPage = document.querySelector('.other-page'),
 searchInput = document.getElementById('search'),
 categooryEl = document.querySelectorAll('.category'),
-noteEl = document.querySelectorAll('.category'),
 btnNew = document.getElementById('btnNew'),
 btnBack = document.getElementById('btnBack');
-let quill;
+let quill,
+uuid = localStorage.getItem('userUUID');
 
 otherPage.style.display = 'none';
 
@@ -33,6 +33,7 @@ btnNew.addEventListener('click', () => {
 btnBack.addEventListener('click', () => {
   mainPage.style.display = 'block';
   otherPage.style.display = 'none';
+  loadNote()
 });
 
 function initTextEditor() {
@@ -56,6 +57,14 @@ function initTextEditor() {
       },
     });
   }
+    
+  document.querySelector('#btnSave').addEventListener('click', function(){
+    const content = quill.getContents(); 
+    const contentHtml = quill.root.innerHTML;
+    saveNote(uuid,contentHtml)
+  });
+
 }
+
 
 
